@@ -342,6 +342,7 @@
           if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);
             var route = response.routes[0];
+
             var summaryPanel = document.getElementById('directions-panel');
             summaryPanel.innerHTML = '';
             
@@ -352,7 +353,15 @@
                   '</b><br>';
               summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
               summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
-              summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+              summaryPanel.innerHTML += route.legs[i].distance.text + '<br>';
+
+              summaryPanel.innerHTML += '<b>Turn by turn instructions:</b><br>';
+              for (var i1 = 0; i1 < route.legs[i].steps.length; i1++){
+                summaryPanel.innerHTML += route.legs[i].steps[i1].instructions + '<br>';
+              }
+              summaryPanel.innerHTML += '<br>';
+
+              
 
             }
 
