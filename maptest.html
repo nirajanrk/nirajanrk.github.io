@@ -54,11 +54,12 @@
     <div>
     <b>Truck Starts At:</b>
     <select id="start">
+      <option value="40.4546358,-79.9828479">25th & Smallman St.</option>
       <option value="40.4380555,-79.9988901">Pittsburgh Public Works Department</option>
       <option value="40.4348462,-79.9966156">First Avenue Station</option>
       <option value="40.446517,-80.0061781">PNC Park</option>
     </select>
-    <br>
+    <br><br>
     <b>Pickup Trashbags at:</b> <br>
     <i>(Ctrl-Click for multiple selection)</i> <br>
     <select multiple id="waypoints">
@@ -293,9 +294,10 @@
 <option value="40.43764837,-80.00037027">229-Solar Trash Compactor:40.43764837,-80.00037027</option>
 
     </select>
-    <br>
+    <br><br>
     <b>Truck Ends At:</b>
     <select id="end">
+      <option value="40.4546358,-79.9828479">25th & Smallman St.</option>
       <option value="40.4380555,-79.9988901">Pittsburgh Public Works Department</option>
       <option value="40.4348462,-79.9966156">First Avenue Station</option>
       <option value="40.446517,-80.0061781">PNC Park</option>
@@ -303,6 +305,7 @@
     <br>
       <input type="submit" id="submit">
     </div>
+
     <div id="directions-panel"></div>
     </div>
     <script>
@@ -322,6 +325,7 @@
 
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         var waypts = [];
+        //var MAX_WAYPOINTS_PER_REQUEST = 1000;
         var checkboxArray = document.getElementById('waypoints');
         for (var i = 0; i < checkboxArray.length; i++) {
           if (checkboxArray.options[i].selected) {
@@ -338,6 +342,7 @@
           waypoints: waypts,
           optimizeWaypoints: true,
           travelMode: google.maps.TravelMode.DRIVING
+
         }, function(response, status) {
           if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);
@@ -345,6 +350,7 @@
 
             var summaryPanel = document.getElementById('directions-panel');
             summaryPanel.innerHTML = '';
+            
             
             // For each route, display summary information.
             for (var i = 0; i < route.legs.length; i++) {
@@ -354,10 +360,19 @@
               summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
               summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
               summaryPanel.innerHTML += route.legs[i].distance.text + '<br>';
+              summaryPanel.innerHTML += 'Total Duration: ' + route.legs[i].duration.text + '<br>';
+              //summaryPanel.innerHTML += route.legs[i].duration_in_traffic.text + '<br>';
+              //summaryPanel.innerHTML += route.legs[i].arrival_time.text + '<br>';
+              //summaryPanel.innerHTML += route.legs[i].departure_time.text + '<br>';
+              
+              summaryPanel.innerHTML += '<br>';
 
               summaryPanel.innerHTML += '<b>Turn by turn instructions:</b><br>';
               for (var i1 = 0; i1 < route.legs[i].steps.length; i1++){
                 summaryPanel.innerHTML += route.legs[i].steps[i1].instructions + '<br>';
+                summaryPanel.innerHTML += 'Duration: ' + route.legs[i].steps[i1].duration.text + '<br>';
+
+                summaryPanel.innerHTML += '<br>';
               }
               summaryPanel.innerHTML += '<br>';
 
