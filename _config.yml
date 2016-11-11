@@ -7,7 +7,7 @@ headline: Software Developer, Engineer and Analyst
 description: > # this means to ignore newlines until "baseurl:"
   New Site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://nirajanrk.github.io" # the base hostname & protocol for your site
 copyright: 2016 Nirajan Rajkarnikar. All Rights Reserved.
 
 # Build settings
