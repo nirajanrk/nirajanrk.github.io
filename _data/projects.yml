@@ -1,0 +1,42 @@
+- title: Greater Hazelwood Community Census Data Analysis &amp; Visualization 
+  photo: Hazelwood2.JPG
+  url: http://www.greaterhazelwoodcensus.org
+  description: Data Analysis, Data Visualization &amp; Web Development Project as part of Students for Urban Data Systems (SUDS) at Carnegie Mellon University (CMU). Client for the project was the Greater Hazelwood Community Initiative. <br/>Technologies used - Tableau, Wordpress, GIS, PHP, SQL.
+  technologies: Tableau, Wordpress, GIS, PHP, SQL
+  category: WebDevelopment, DataAnalysis
+
+
+- title: TrashTalkers - Finalist in Pittsburgh SteelCity Codefest 2016
+  photo: TrashTalkers.png
+  url: https://www.youtube.com/watch?v=usAollNjcjk
+  description: 
+
+- title: Mobile App Dashboard - Time Series Analytics With Replay Capabilities
+  photo: ReplayAnalytics.gif
+  url: http://sageclarity.com/idea-lab/replay-for-manufacturing-2/
+  description: Time Series Analytics mobile application for Sage Clarity Systems using Javascript and Sencha Charts library.
+
+- title: Finalist in National Cyber Security Policy Competition
+  photo: CSAWcombined.jpg
+  url: https://csaw.engineering.nyu.edu/blog/policy-winners-2015
+  description: A National Cyber Bug Broker - Retrofitting Transparency
+
+- title: Publications Profile on Google Scholar
+  photo: GoogleScholar.JPG
+  url: https://scholar.google.com/scholar?q=%22nirajan+rajkarnikar%22&btnG=&hl=en&as_sdt=0%2C39
+  description: 
+
+- title: CartoDB visualization of Allegheny County Cell Towers
+  photo: CartoDB2.JPG
+  url: https://nirajanrk.cartodb.com/viz/e36fb908-f6c6-11e5-b6b4-0e3a376473ab/embed_map
+  description: Use of CartoDB to visualize locations of cell phone towers in Allegheny County. This data was obtained from WPRDC (Western Pennsylvania Regional Data Center).
+
+- title: Location Privacy in Spectrum Sharing
+  photo: 
+  url: 
+  description: 
+
+- title: Police Body Camera In Pittsburgh
+  photo: 
+  url: 
+  description: 
