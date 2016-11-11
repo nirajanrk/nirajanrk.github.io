@@ -1,7 +1,7 @@
 - title: Greater Hazelwood Community Census Data Analysis &amp; Visualization 
   photo: Hazelwood2.JPG
   url: http://www.greaterhazelwoodcensus.org
-  description: Data Analysis, Data Visualization &amp; Web Development Project as part of Students for Urban Data Systems (SUDS) at Carnegie Mellon University (CMU). Client for the project was the Greater Hazelwood Community Initiative. <br/>Technologies used - Tableau, Wordpress, GIS, PHP, SQL.
+  description: Data Analysis, Data Visualization &amp; Web Development Project as part of Students for Urban Data Systems (SUDS) at Carnegie Mellon University (CMU). Client for the project was the Greater Hazelwood Community Initiative. <br/><br/>Technologies used - Tableau, Wordpress, GIS, PHP, SQL.
   technologies: Tableau, Wordpress, GIS, PHP, SQL
   category: WebDevelopment, DataAnalysis
 
@@ -9,12 +9,12 @@
 - title: TrashTalkers - Finalist in Pittsburgh SteelCity Codefest 2016
   photo: TrashTalkers.png
   url: https://www.youtube.com/watch?v=usAollNjcjk
-  description: 
+  description: Finalist in Pittsburgh SteelCity Codefest Hackathon 2016. Optimizes trash pickup in Pittsburgh Downtown area by updating trash status and truck route in real time. Client is Pittsburgh Downtown Partnership. <a href="http://www.steelcitycodefest.com/teams" target="blank">http://www.steelcitycodefest.com/teams</a> <br/><br/>Technologies used - Firebase, PubNub, Javascript, HTML, CSS.
 
 - title: Mobile App Dashboard - Time Series Analytics With Replay Capabilities
   photo: ReplayAnalytics.gif
   url: http://sageclarity.com/idea-lab/replay-for-manufacturing-2/
-  description: Time Series Analytics mobile application for Sage Clarity Systems using Javascript and Sencha Charts library.
+  description: Developed mobile application that highlights interesting time points in manufacturing data using Javascript and Sencha Charts library. Charts had playback capabilities and could be  synchronized.<br/><br/>Technologies used - Javascript, Sencha Charts, SQL.
 
 - title: Finalist in National Cyber Security Policy Competition
   photo: CSAWcombined.jpg
@@ -32,11 +32,11 @@
   description: Use of CartoDB to visualize locations of cell phone towers in Allegheny County. This data was obtained from WPRDC (Western Pennsylvania Regional Data Center).
 
 - title: Location Privacy in Spectrum Sharing
-  photo: 
+  photo: CylabPoster.png
   url: 
-  description: 
+  description: Submitted for Publication in IEEE DySpan Conference 2017
 
 - title: Police Body Camera In Pittsburgh
   photo: 
   url: 
-  description: 
+  description: Analysis of costs, technical feasibility, policies, benefits, impacts, and community relations for implementation of Police Body-worn Camera systems in Pittsburgh city. In collaboration with Pittsburgh Police Department, Carnegie Mellon Police, and Pittsburgh Citizen Police Review Board.

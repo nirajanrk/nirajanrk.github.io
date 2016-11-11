@@ -1,35 +1,43 @@
-<section class="container container-instagram">
-    <div class="row">
-        <div class="col-md-12">
+<!-- <section class="container container-instagram">
+    <div class="row"> -->
+        <!-- <div class="col-md-12"> -->
+        <div class="container">
             <h1>Portfolio</h1>
         </div>
+        <p></p> 
 
-        {% for project in site.data.projects %}
-        <div class="col-md-5 col-sm-12" style = "background:#aaa; border-radius: 25px; margin:10px 80px 10px 10px; padding:10px 0px 10px 0px; ">
-            {% if project.url != null %}
-            <a href="{{ project.url }}" target="blank">
-            {% endif %}
-                <h4 style="text-align: center; padding: 0px 10px 0px 10px;"> {{ project.title }} </h4>
-            {% if project.photo != null %}
-            <img src="web-dist/images/projects/{{ project.photo }}" style="width:100%; display: block; margin-left: auto; margin-right: auto"/>
-            {% endif %}
-            {% if project.url != null %}
-            </a>
-            {% endif %}
-            <p style="padding:0px 10px 0px 10px;">{{ project.description}} </P>
+        <div class="container projectcontainer" >
+            {% for project in site.data.projects %}
+            <!-- class="col-md-5 col-sm-12" -->
+            
+            <div class="proj">
+                {% if project.url != null %}
+                <a href="{{ project.url }}" target="blank">
+                {% endif %}
+                    <h4 class="project-heading"> {{ project.title }} </h4>
+                {% if project.photo != null %}
+                <img class="full-width-center" src="web-dist/images/projects/{{ project.photo }}" />
+                {% endif %}
+                {% if project.url != null %}
+                </a>
+                {% endif %}
+                <p class="project-description">{{ project.description}} </P>
 
+            </div>
+            
+            {% endfor %}
+
+
+            <!--
+            <div class="col-md-12">
+                <!-- Generate such a widget at snapwidget.com for your name -->
+                <!-- Copy/paste code here or just update the snapwidget value at _config.yml -->
+            <!--
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe src="https://snapwidget.com/embed/{{ site.snapwidget }}" class="snapwidget-widget" allowTransparency="true"
+                        frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+            </div>
+        -->
         </div>
-        
-        {% endfor %}
-        <!--
-        <div class="col-md-12">
-            <!-- Generate such a widget at snapwidget.com for your name -->
-            <!-- Copy/paste code here or just update the snapwidget value at _config.yml -->
-        <!--
-            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-            <iframe src="https://snapwidget.com/embed/{{ site.snapwidget }}" class="snapwidget-widget" allowTransparency="true"
-                    frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-        </div>
-    -->
-    </div>
-</section>
+   <!--  </div>
+</section> -->
