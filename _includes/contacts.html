@@ -5,9 +5,12 @@
                 <h1>Contacts</h1>
             </div>
         <div class="col-md-6 col-sm-12">
+
+{% for account in site.data.icons %}
 <a href="http://github.com/nirajanrk" target="blank">
-    <img src="web-dist/images/icons/github.svg" width="30px" height="30px"/>
+    <img src="web-dist/images/icons/{{account.icon}}" width="30px" height="30px" alt="{{account.title}}"/>
 </a>
+{% endfor %}
 
 
 </div>
