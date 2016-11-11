@@ -4,16 +4,23 @@
             <div class="col-md-12">
                 <h1>Contacts</h1>
             </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-12 col-sm-12">
 
 {% for account in site.data.icons %}
-<a href="http://github.com/nirajanrk" target="blank">
-    <img src="web-dist/images/icons/{{account.icon}}" width="30px" height="30px" alt="{{account.title}}"/>
+{% if account.name == "Kaggle" %}
+<a href="{{account.url}}" target="blank">
+    <img src="web-dist/images/icons/{{account.icon}}" width="100px" height="100px" style="margin:0px" alt="{{account.title}}"/>
 </a>
+{% else %}
+<a href="{{account.url}}" target="blank">
+    <img src="web-dist/images/icons/{{account.icon}}" width="30px" height="30px" style="margin:10px" alt="{{account.title}}"/>
+</a>
+{% endif %}
 {% endfor %}
 
 
 </div>
+
 
 
             <div class="col-md-6 col-sm-12 container-contacts-phone">
@@ -22,12 +29,14 @@
                     {{ site.email }}
                 </a>
             </div>
+            <!---
             <div class="col-md-6 col-sm-12 container-contacts-phone">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <a href="tel:{{ site.phone }}">
                     {{ site.phone }}
                 </a>
             </div>
+        -->
 
         </div>
     </div>

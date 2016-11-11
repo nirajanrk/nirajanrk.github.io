@@ -1,17 +1,22 @@
 - name: GitHub
   url: http://github.com/nirajanrk
   icon: github.svg
-  title: Nirajan's Github Account
+  title: Nirajan's Github Profile
 
 - name: Kaggle
   url: http://www.kaggle.com/nirajanrk
-  icon: kaggle-transparent.svg
-  title: Code und mehr...
-  
+  icon: kaggle-gray.svg
+  title: Nirajan's Kaggle Profile
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/nirajanrk
+  icon: linkedin.svg
+  title: Nirajan's LinkedIn Profile
+
 - name: YouTube
   url: http://www.youtube.com/nirajanrk
   icon: youtube.svg
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+  title: "Nirajan's YouTube profile "
 
 - name: Twitter
   url: http://twitter.com/nirajanrk
@@ -23,15 +28,15 @@
   icon: soundcloud.svg
   title: "Guitar, Vocal, Flute + Music Compositions"
 
-- name: Google+
-  url: https://plus.google.com/115376202799070351592
-  icon: googleplus
-  title: "Google+"
+# - name: Google+
+#   url: https://plus.google.com/115376202799070351592
+#   icon: googleplus
+#   title: "Google+"
 
-- name: Instagram
-  url: https://www.instagram.com/nirajanr/
-  icon: instagram
-  title: "Instagram"
+# - name: Instagram
+#   url: https://www.instagram.com/nirajanr/
+#   icon: instagram
+#   title: "Instagram"
 
 
 # - name: MixCloud
