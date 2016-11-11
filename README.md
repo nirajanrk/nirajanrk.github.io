@@ -1,4 +1,4 @@
 # Welcome to Nirajan's Website!
 
 Please visit:
-- [nirajanrk.github.io](http://nirajanrk.gihub.io)
+- [nirajanrk.github.io](http://nirajanrk.github.io)
